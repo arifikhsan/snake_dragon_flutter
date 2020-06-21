@@ -63,6 +63,18 @@ class MyApp extends StatelessWidget {
                         width: 50,
                       ),
                     ),
+                    Positioned(
+                      bottom: 250,
+                      right: 100,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          shape: BoxShape.circle,
+                        ),
+                        height: 50,
+                        width: 50,
+                      ),
+                    ),
                   ],
                 ),
               ),
