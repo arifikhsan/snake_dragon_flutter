@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
+        backgroundColor: Colors.grey.shade200,
         body: SafeArea(
           child: Container(
             child: Center(
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
                 child: Stack(
                   children: <Widget>[
                     Positioned(
-                      top: 0,
-                      left: 0,
+                      top: 100,
+                      left: 100,
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.red,
@@ -27,8 +28,8 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: 0,
-                      right: 0,
+                      top: 150,
+                      left: 100,
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.orange,
@@ -39,8 +40,20 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      bottom: 0,
-                      left: 0,
+                      top: 200,
+                      left: 100,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                          shape: BoxShape.circle,
+                        ),
+                        height: 50,
+                        width: 50,
+                      ),
+                    ),
+                    Positioned(
+                      top: 250,
+                      left: 100,
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.orange,
